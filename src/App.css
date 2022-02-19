@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Red+Hat+Text:wght@300;400;500;600;700&display=swap');
 
+:root {
+  --green-mid: #B4DBBB;
+  --green-light: #f9ffed;
+  --green-dark-text: #2B3825;
+  --green-dark-bg: #414F3B;
+}
+
 /* main {
   text-align: center;
   vertical-align: center;
   line-height: 100vh
 } */
+
+.nav-menu {
+  background: var(--green-light);
+  top: 5rem;
+  transition: right 0.3s ease-in;
+}
+.nav-hide {
+  right: -15em;
+}
