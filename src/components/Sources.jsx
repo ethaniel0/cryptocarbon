@@ -56,7 +56,7 @@ export const coins =  {
   },
   'Terra': {
     countries: [["USA", ''], ["Canada", ''], ["Australia", '']],
-    carbon: 0.000, // number is not updated
+    carbon: 0.000237, // number is not updated
     fact: "Terra Virtua claims that the network would allow the ecosystem to reduce energy consumption used to create an NFT by more than 99%!"
   },
   

@@ -14,7 +14,7 @@ import Header from './components/Header';
     </div>
     <main className='px-2 text-center'>
       {/* intro text */}
-      <span className='text-2xl font-bold block mb-4'>Pay with your favorite coins. Without paying the price of a <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-600'>hotter planet.</span></span>
+      <span className='text-2xl font-bold block mb-4'>Pay with your favorite coins. Without paying the price of a <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600'>hotter planet.</span></span>
 
       <span className='text-xl block px-8'>A comprehensive platform that helps you make informed decisions when it comes to cryptocurrencies and their environmental impacts.</span>
 

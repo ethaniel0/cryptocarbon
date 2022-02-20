@@ -32,7 +32,7 @@ function getCountry(country){
     <div className='mt-8 overflow-x-hidden'>
 
       {/* show tons of co2 per transaction */}
-      <span className='text-2xl block mb-8'>One transaction on {coin} generates <b>{carbon} kg of CO<sub>2</sub></b></span>
+      <span className='text-2xl block mb-8 px-4'>One transaction on {coin} generates <b>~{carbon} kg of CO<sub>2</sub></b></span>
 
       <span className='text-2xl block mb-8 px-4'>{cryptos[coin].fact}</span>
 
