@@ -17,14 +17,25 @@ import * as React from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
-export default function Carbonfn() {
+
+function getCoinName(name){
+  if (name.trim() == '' || name.includes('"') || name.includes('<')){
+    return false;
+  }
+  return name;
+}
+
+
+export default function Carbonfn({changeCoin}) {
+  
   return (
     <Autocomplete
       disablePortal
       id="combo-box-demo"
       options={cryptoInput}
-      sx={{ width: '100vw', background: '' }}
-      renderInput={(params) => <TextField {...params} label="Cryptocurrency" />}
+      sx={{ padding:'10px' ,width: '100vw', background: '#414F3B', color: '#f9ffed;', border: 'none' }}
+      renderInput={(params) => <TextField {...params}  label="Cryptocurrency" />}
+      onChange={(e) => changeCoin(getCoinName(e.target.innerHTML))}
     />
   );
 }
@@ -38,17 +49,10 @@ const cryptoInput = [
   { label: "Tether", year: 1993 },
   { label: 'ShibaInu', year: 1994 },
   {
-    label: 'LiteCoin',
+    label: 'XRP',
     year: 2003,
   },
-  { label: 'BitCashCoin', year: 1966 },
-  { label: 'Stellar', year: 1999 },
-  {
-    label: 'Ethereum Classic',
-    year: 2001,
-  },
-  {
-    label: 'BlockStack',
-    year: 1980,
-  }
+  
+  { label: 'Terra', year: 1999 },
+  { label: 'Stellar', year: 1999 }
 ];

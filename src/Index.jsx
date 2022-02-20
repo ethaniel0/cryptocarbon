@@ -8,11 +8,13 @@ import Header from './components/Header';
 
  export default function Index({icon, name, desc}) {
   return (
-    <main className='px-2 py-5 text-center'>
+    <>
+    <div className = 'pt-5'>
       <Header />
-
+    </div>
+    <main className='px-2 text-center'>
       {/* intro text */}
-      <span className='text-2xl font-bold block mb-8'>Pay with your favorite coins. Without paying the price of a hotter planet.</span>
+      <span className='text-2xl font-bold block mb-4'>Pay with your favorite coins. Without paying the price of a <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-red-600'>hotter planet.</span></span>
 
       <span className='text-xl block px-8'>A comprehensive platform that helps you make informed decisions when it comes to cryptocurrencies and their environmental impacts.</span>
 
@@ -21,9 +23,9 @@ import Header from './components/Header';
 
       <div className='grid grid-cols-2'>
         <Card icon="/src/assets/tree.svg" name="Eco-Friendly" desc="All money goes to carbon offsetting" />
-        <Card icon="/src/assets/snap.svg" name="Easy" desc="You don’t even have to think about it." />
-        <Card icon="/src/assets/relief.svg" name="Relieving" desc="Stop worrying about crypto energy usage" />
-        <Card icon="/src/assets/group.svg" name="Large" desc="Join hundreds of people" />
+        <Card icon="/src/assets/snap.svg" name="Easy" desc="We do the research so you don't have to" />
+        <Card icon="/src/assets/relief.svg" name="Relieving" desc="You're doing the world a needed service" />
+        <Card icon="/src/assets/group.svg" name="Large" desc="Join hundreds of people on our platform" />
       </div>
 
       {/* tons of carbon offset */}
@@ -40,15 +42,8 @@ import Header from './components/Header';
         </div>
       </div>
 
-      <button className="join-btn p-4 rounded-xl text-3xl font-bold">Join Us Today!</button>
-
-      {/* select */}
-      <div className='mt-4'>
-        <Carbonfn />
-      </div>
-         <Carbon />
-
-      <Data />
+      <button className="join-btn p-4 rounded-xl text-3xl font-bold mb-8">Join Us Today!</button>
     </main>
+    </>
   )
 }

@@ -1,4 +1,4 @@
-import express from "express";
+const express = require('express');
 const Database = require("@replit/database");
 const db = new Database();
 
@@ -28,3 +28,4 @@ app.post('/addOffset', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
+
